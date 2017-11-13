@@ -1,4 +1,7 @@
 
+## Rebaser
+A utility to sync the current git branch with master branch with ease.
+
 ## Pre-requisites
 - ZSH or BASH
 - GIT
