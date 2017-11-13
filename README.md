@@ -1,5 +1,5 @@
 
-## Prerequisites
+## Pre-requisites
 - ZSH or BASH
 - GIT
 
