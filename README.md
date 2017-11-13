@@ -1,3 +1,7 @@
+## Prerequisite
+- ZSH or BASH
+- GIT
+
 ## Rebaser installation steps
 
 #### via curl
