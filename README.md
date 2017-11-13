@@ -14,3 +14,16 @@ sh -c "$(wget https://raw.githubusercontent.com/reginvinny/rebaser/master/instal
 
 - Checkout feature branch
 - Enter "rebaser" command to sync with master
+
+## Rebaser installation steps
+
+#### via curl
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/install.sh)"
+```
+
+#### via wget
+```shell
+sh -c "$(wget https://raw.githubusercontent.com/reginvinny/rebaser/master/uninstall.sh -O -)"
+```
+
