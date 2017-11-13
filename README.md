@@ -5,6 +5,7 @@ A utility to sync the current git branch with master branch with ease.
 ## Pre-requisites
 - ZSH or BASH
 - GIT
+- You should be inside a cloned git repo branch on your local machine
 
 ## Rebaser installation steps
 
