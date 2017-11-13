@@ -16,6 +16,7 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
 clear
 echo ''
+echo ' '
 echo '******** Rebasing branch' $curr_branch 'with master ********'
 echo ' '
 git checkout $curr_branch
@@ -25,10 +26,12 @@ echo ''
 git rebase master
 clear
 echo ''
+echo ' '
 echo '******** Force pushing changes ********'
 echo ' '
 git push --force
 clear
+echo ' '
 echo ' '
 echo '******** Rebase with master complete! ********'
 echo ' '
@@ -38,6 +41,7 @@ echo ' '
 echo ' '
 git checkout $curr_branch
 clear
+echo ' '
 echo ' '
 echo '******** Rebase cancelled! ********'
 echo ' '
