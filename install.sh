@@ -5,8 +5,8 @@ git checkout install
 cd rebaser
 echo "alias rebaser='sh ~/rebaser/install_utils/rebaser_utlil.sh'" >> ~/.zshrc
 echo "alias rebaser='sh ~/rebaser/install_utils/rebaser_utlil.sh'" >> ~/.bash_profile
-echo "alias uninstall_rebaser='sh ~/rebaser/uninstall.sh'" >> ~/.zshrc
-echo "alias uninstall_rebaser='sh ~/rebaser/uninstall.sh'" >> ~/.bash_profile
+echo "alias uninstall_rebaser='sh ~/rebaser/rebaser_uninstall.sh'" >> ~/.zshrc
+echo "alias uninstall_rebaser='sh ~/rebaser/rebaser_uninstall.sh'" >> ~/.bash_profile
 
 clear
 echo " "
