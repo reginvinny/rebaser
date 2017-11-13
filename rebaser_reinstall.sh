@@ -1,6 +1,6 @@
 #---Rebaser Reinstall File---#
 cd ~
-uninstall_rebase
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/rebaser_uninstall.sh)"
 echo " "
 echo " "
 sleep 1
