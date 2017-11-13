@@ -20,7 +20,7 @@ sh -c "$(wget https://raw.githubusercontent.com/reginvinny/rebaser/master/instal
 - Checkout feature branch
 - Enter "rebaser" command to sync with master
 
-## Rebaser Un-installation steps
+## Rebaser Uninstallation steps
 
 #### via curl
 ```shell
