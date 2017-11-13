@@ -28,4 +28,9 @@ echo " "
 echo - Use \'uninstall_rebaser\' command
 echo " "
 echo " "
+echo  Rebaser Reinstallation steps
+echo " "
+echo - Use \'reinstall_rebaser\' command
+echo " "
+echo " "
 exit
