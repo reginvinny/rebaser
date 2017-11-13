@@ -1,4 +1,4 @@
-## Prerequisite
+## Prerequisites
 - ZSH or BASH
 - GIT
 
