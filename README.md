@@ -32,5 +32,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/
 sh -c "$(wget https://raw.githubusercontent.com/reginvinny/rebaser/master/uninstall.sh -O -)"
 ```
 
-### 
+#-
 
