@@ -26,4 +26,4 @@ echo " "
 echo - Use "uninstall_rebaser" command
 echo " "
 echo " "
-exec sleep 5
+exit
