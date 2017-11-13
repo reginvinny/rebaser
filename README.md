@@ -12,13 +12,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/
 ## Rebaser usage
 
 - Checkout feature branch
-- Enter "rebaser" command to sync with master
+- Enter 'rebaser' command to sync with master
 
 ## Rebaser Uninstallation steps
 
 #### via shell
 ```shell
-uninstall_rebaser
+'uninstall_rebaser'
 ```
 
 #### via curl
