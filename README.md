@@ -9,12 +9,6 @@
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/install.sh)"
 ```
-
-#### via wget
-```shell
-sh -c "$(wget https://raw.githubusercontent.com/reginvinny/rebaser/master/install.sh -O -)"
-```
-
 ## Rebaser usage
 
 - Checkout feature branch
@@ -25,11 +19,6 @@ sh -c "$(wget https://raw.githubusercontent.com/reginvinny/rebaser/master/instal
 #### via curl
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/rebaser_uninstall.sh)"
-```
-
-#### via wget
-```shell
-sh -c "$(wget https://raw.githubusercontent.com/reginvinny/rebaser/master/rebaser_uninstall.sh -O -)"
 ```
 
 
