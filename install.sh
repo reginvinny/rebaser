@@ -17,13 +17,11 @@ echo " "
 
 echo  Rebaser usage
 echo " "
-echo " "
 echo - Checkout feature branch
 echo - Enter "rebaser" command to sync with master
 echo " "
 echo " "
 echo  Rebaser Uninstallation steps
-echo " "
 echo " "
 echo - Use "uninstall_rebaser" command
 echo " "
