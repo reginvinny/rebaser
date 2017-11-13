@@ -16,6 +16,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/
 
 ## Rebaser Uninstallation steps
 
+#### via shell
+```shell
+uninstall_rebaser
+```
+
 #### via curl
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/rebaser_uninstall.sh)"
