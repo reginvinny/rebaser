@@ -1,10 +1,10 @@
 #---Rebaser Install File---#
-echo ' '
-echo '#######################################'
-echo '#           Rebaser                   #'
-echo '#        Author: Regin Vinny          #'
-echo '#######################################'
-echo ''
+echo " "
+echo "#######################################"
+echo "#           Rebaser                   #"
+echo "#        Author: Regin Vinny          #"
+echo "#######################################"
+echo " "
 sleep 1
 cd ~
 git clone https://github.com/reginvinny/rebaser.git
@@ -15,7 +15,6 @@ echo "alias uninstall_rebaser='sh ~/rebaser/rebaser_uninstall.sh'" >> ~/.zshrc
 echo "alias uninstall_rebaser='sh ~/rebaser/rebaser_uninstall.sh'" >> ~/.bash_profile
 echo "alias reinstall_rebaser='sh ~/rebaser/rebaser_reinstall.sh'" >> ~/.zshrc
 echo "alias reinstall_rebaser='sh ~/rebaser/rebaser_reinstall.sh'" >> ~/.bash_profile
-
 clear
 echo " "
 echo " "
