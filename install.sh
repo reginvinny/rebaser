@@ -3,8 +3,8 @@ cd ~
 git clone https://github.com/reginvinny/rebaser.git
 git checkout install
 cd rebaser
-echo "alias rebaser='sh ~/rebaser/install_utils/rebaser_utlil.sh'" >> ~/.zshrc
-echo "alias rebaser='sh ~/rebaser/install_utils/rebaser_utlil.sh'" >> ~/.bash_profile
+echo "alias rebaser='sh ~/rebaser/install_utils/rebaser_util.sh'" >> ~/.zshrc
+echo "alias rebaser='sh ~/rebaser/install_utils/rebaser_util.sh'" >> ~/.bash_profile
 echo "alias uninstall_rebaser='sh ~/rebaser/rebaser_uninstall.sh'" >> ~/.zshrc
 echo "alias uninstall_rebaser='sh ~/rebaser/rebaser_uninstall.sh'" >> ~/.bash_profile
 echo "alias reinstall_rebaser='sh ~/rebaser/rebaser_reinstall.sh'" >> ~/.zshrc
