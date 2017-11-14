@@ -1,4 +1,11 @@
 #---Rebaser Install File---#
+echo ' '
+echo '#######################################'
+echo '#           Rebaser                   #'
+echo '#        Author: Regin Vinny          #'
+echo '#######################################'
+echo ''
+sleep 1
 cd ~
 git clone https://github.com/reginvinny/rebaser.git
 cd rebaser
