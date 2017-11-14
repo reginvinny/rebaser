@@ -1,7 +1,7 @@
 #---Rebaser Uninstall File---#
 
-sed -i '' '/alias rebaser=/d' ~/.zshrc
-sed -i '' '/alias rebaser=/d' ~/.bash_profile
+sed -i '' '/rebaser=/d' ~/.zshrc
+sed -i '' '/rebaser=/d' ~/.bash_profile
 
 
 cd ~
