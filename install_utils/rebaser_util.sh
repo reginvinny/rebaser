@@ -44,7 +44,23 @@ echo 'Error... Please try again '
 echo ' '
 exit 1
 fi
+echo ''    
 echo '--------------------------------'
+if [[ "$curr_branch" == "master" ]]
+    then
+    echo ' '
+    echo 'Error... Not allowed to rebase master with another branch. Exiting...'
+    echo ' '
+    exit 1
+    elif [[ "$curr_branch" == "$ref_branch_name" ]]
+    then
+    echo ' '
+    echo 'Error... Not allowed to rebase a branch with itself. Exiting... '
+    echo ' '
+    exit 1
+fi
+
+
 read -r -p "Are you sure? [Y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
