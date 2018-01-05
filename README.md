@@ -41,6 +41,9 @@ reinstall_rebaser
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/rebaser_reinstall.sh)"
 ```
+## Rebaser help
+
+- Enter 'rebaser help' command for help
 
 
 
