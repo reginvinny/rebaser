@@ -1,6 +1,6 @@
 echo ' '
 echo '#######################################'
-echo '#        Welcome to Rebaser!          #'
+echo '#        Welcome to Rebaser!!         #'
 echo '#        Author: Regin Vinny          #'
 echo '#######################################'
 echo ''
