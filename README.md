@@ -47,12 +47,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/
 
 ## Legal Disclaimer
 
-```shell
-This software is made available with NO representations or warranties of any kind about the completeness, accuracy, reliability, suitability or availability for any purpose. Any reliance you place on this software is therefore strictly at your own risk.
+> This software is made available with NO representations or warranties of any kind about the completeness, accuracy, reliability, suitability or availability for any purpose. Any reliance you place on this software is therefore strictly at your own risk.
 
-In no event will the developer be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this software.
+> In no event will the developer be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this software.
 
-```
 
 
 
