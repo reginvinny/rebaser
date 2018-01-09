@@ -10,7 +10,5 @@ echo " "
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/rebaser/master/install.sh)"
 echo " "
 echo " "
-echo "---------------Rebaser Reinstall Complete---------------"
-echo " "
-echo " "
+
 
