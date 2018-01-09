@@ -1,0 +1,22 @@
+
+#######################################'
+#        Rebaser Help                 #'
+#######################################'
+
+~~~~~~~~~ Rebaser Usage ~~~~~~~~~'
+
+- Checkout feature branch
+- Enter 'rebaser' command to sync with master
+
+~~~~~~~~~ Rebaser Uninstallation steps ~~~~~~~~~'
+
+- Use 'uninstall_rebaser' command
+
+~~~~~~~~~ Rebaser Reinstallation steps ~~~~~~~~~'
+
+- Use 'reinstall_rebaser' command
+
+~~~~~~~~~ Rebaser Help ~~~~~~~~~'
+
+- Use 'rebaser help' command
+

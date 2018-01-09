@@ -8,35 +8,8 @@ echo ''
 #----------------------------------------------
 if [[ "$1" == "help" ]]
 then
-
 clear
-echo ' '
-echo ' '
-echo '#######################################'
-echo '#        Rebaser Help                 #'
-echo '#######################################'
-echo ' '
-echo  '~~~~~~~~~ Rebaser Usage ~~~~~~~~~'
-echo ' '
-echo  - Checkout feature branch
-echo  - Enter \'rebaser\' command to sync with master
-echo ' '
-echo ' '
-echo  '~~~~~~~~~ Rebaser Uninstallation steps ~~~~~~~~~'
-echo ' '
-echo  - Use \'uninstall_rebaser\' command
-echo ' '
-echo ' '
-echo  '~~~~~~~~~ Rebaser Reinstallation steps ~~~~~~~~~'
-echo ' '
-echo  - Use \'reinstall_rebaser\' command
-echo ' '
-echo ' '
-echo  '~~~~~~~~~ Rebaser Help ~~~~~~~~~'
-echo ' '
-echo  - Use \'rebaser help\' command
-echo ' '
-echo ' '
+cat ~/rebaser/install_utils/help
 exit 1
 fi
 #----------------------------------------------
