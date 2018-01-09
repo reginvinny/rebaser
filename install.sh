@@ -9,6 +9,9 @@ sleep 1
 cd ~
 git clone https://github.com/reginvinny/rebaser.git
 cd rebaser
+echo "#----- rebaser" >> ~/.zshrc
+echo "#----- rebaser" >> ~/.bash_profile
+
 echo "alias rebaser='sh ~/rebaser/install_utils/rebaser_util.sh'" >> ~/.zshrc
 echo "alias rebaser='sh ~/rebaser/install_utils/rebaser_util.sh'" >> ~/.bash_profile
 echo "alias uninstall_rebaser='sh ~/rebaser/rebaser_uninstall.sh'" >> ~/.zshrc
