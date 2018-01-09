@@ -47,4 +47,7 @@ echo ' '
 echo  - Use \'rebaser help\' command
 echo ' '
 echo ' '
+echo "---------------Close this terminal window to complete installation---------------"
+echo ' '
+echo ' '
 exit

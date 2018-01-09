@@ -1,3 +1,4 @@
+clear
 echo ' '
 echo '#######################################'
 echo '#        Welcome to Rebaser!          #'
@@ -7,35 +8,8 @@ echo ''
 #----------------------------------------------
 if [[ "$1" == "help" ]]
 then
-
 clear
-echo ' '
-echo ' '
-echo '#######################################'
-echo '#        Rebaser Help                 #'
-echo '#######################################'
-echo ' '
-echo  ~~~~~~~~~ Rebaser Usage ~~~~~~~~~
-echo ' '
-echo  - Checkout feature branch
-echo  - Enter \'rebaser\' command to sync with master
-echo ' '
-echo ' '
-echo  ~~~~~~~~~ Rebaser Uninstallation steps ~~~~~~~~~
-echo ' '
-echo  - Use \'uninstall_rebaser\' command
-echo ' '
-echo ' '
-echo  ~~~~~~~~~ Rebaser Reinstallation steps ~~~~~~~~~
-echo ' '
-echo  - Use \'reinstall_rebaser\' command
-echo ' '
-echo ' '
-echo  ~~~~~~~~~ Rebaser Help ~~~~~~~~~
-echo ' '
-echo  - Use \'rebaser help\' command
-echo ' '
-echo ' '
+cat ~/rebaser/install_utils/help
 exit 1
 fi
 #----------------------------------------------
@@ -43,9 +17,11 @@ curr_branch=$(git rev-parse --abbrev-ref HEAD)
 ref_branch=master
 echo 'Current branch : ' $curr_branch
 echo ''
-echo 'Select option (1 or 2)'
+echo 'Select option (1, 2 or 3)'
+echo ''
 echo ' 1. Rebase current branch with master branch'
 echo ' 2. Rebase current branch with another branch'
+echo ' 3. Cancel'
 echo ''
 echo 'Enter the option: ' && read option
 echo ''
@@ -54,9 +30,15 @@ echo ''
 if [[ "$option" == "1" ]]
 then
 ref_branch=master
+elif [[ "$option" == "3" ]]
+then
+echo ''
+echo '~~~~~~~~~  Cancelled ~~~~~~~~~'
+echo ''
+exit 1
 elif [[ "$option" == "2" ]]
 then
-echo ---------
+echo '---------'
 git branch
 echo ''
 echo 'Enter the reference branch name: ' && read ref_branch_name
@@ -95,6 +77,7 @@ if [[ "$curr_branch" == "master" ]]
     exit 1
 fi
 
+#------------------------------------------------------------------------------
 
 read -r -p "Are you sure? [Y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
@@ -102,11 +85,25 @@ then
 echo ''
 git checkout $ref_branch
 echo ''
-git pull --rebase
-echo ' '
-clear
+git_pull_rebase_out="$(git pull --rebase 2>&1)"
+if [[ $git_pull_rebase_out == *"error"* ]]
+then
+echo '~~~~~~~~~ Error - Rebase failed! ~~~~~~~~~'
 echo ''
+echo $git_pull_rebase_out
+echo ''
+echo '~~~~~~~~~  Exiting ~~~~~~~~~'
+echo ''
+echo ''
+sleep 2
+git checkout $curr_branch
+echo ''
+echo ''
+exit 1
+fi
 echo ' '
+#clear
+echo ''
 echo "******** Rebasing branch $curr_branch with $ref_branch ********"
 echo ' '
 git checkout $curr_branch
@@ -114,13 +111,15 @@ echo ''
 git pull
 echo ''
 git rebase $ref_branch
-clear
+sleep 2
+#clear
 echo ''
 echo ' '
 echo '******** Force pushing changes ********'
 echo ' '
 git push --force
-clear
+sleep 2
+#clear
 echo ' '
 echo ' '
 echo "******** Rebase with $ref_branch complete! ********"
@@ -130,7 +129,7 @@ else
 echo ' '
 echo ' '
 git checkout $curr_branch
-clear
+#clear
 echo ' '
 echo ' '
 echo '******** Rebase cancelled! ********'
