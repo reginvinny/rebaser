@@ -16,35 +16,12 @@ echo "alias uninstall_rebaser='sh ~/rebaser/rebaser_uninstall.sh'" >> ~/.bash_pr
 echo "alias reinstall_rebaser='sh ~/rebaser/rebaser_reinstall.sh'" >> ~/.zshrc
 echo "alias reinstall_rebaser='sh ~/rebaser/rebaser_reinstall.sh'" >> ~/.bash_profile
 clear
-echo " "
-echo " "
+echo ' '
+echo ' '
 echo "---------------Rebaser Install Complete---------------"
-
 echo ' '
 echo ' '
-echo '#######################################'
-echo '#        Rebaser Help                 #'
-echo '#######################################'
-echo ' '
-echo  ~~~~~~~~~ Rebaser Usage ~~~~~~~~~
-echo ' '
-echo  - Checkout feature branch
-echo  - Enter \'rebaser\' command to sync with master
-echo ' '
-echo ' '
-echo  ~~~~~~~~~ Rebaser Uninstallation steps ~~~~~~~~~
-echo ' '
-echo  - Use \'uninstall_rebaser\' command
-echo ' '
-echo ' '
-echo  ~~~~~~~~~ Rebaser Reinstallation steps ~~~~~~~~~
-echo ' '
-echo  - Use \'reinstall_rebaser\' command
-echo ' '
-echo ' '
-echo  ~~~~~~~~~ Rebaser Help ~~~~~~~~~
-echo ' '
-echo  - Use \'rebaser help\' command
+cat ~/rebaser/install_utils/help
 echo ' '
 echo ' '
 echo "---------------Close this terminal window to complete installation---------------"
