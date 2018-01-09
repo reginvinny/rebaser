@@ -101,7 +101,6 @@ echo ''
 echo ''
 exit 1
 fi
-echo ' '
 #clear
 echo ''
 echo "******** Rebasing branch $curr_branch with $ref_branch ********"
