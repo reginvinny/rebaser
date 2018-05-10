@@ -109,7 +109,22 @@ git checkout $curr_branch
 echo ''
 git pull
 echo ''
-git rebase $ref_branch
+git_rebase_out="$(git rebase $ref_branch 2>&1)"
+if [[ $git_rebase_out == *"error"* ]]
+then
+echo '~~~~~~~~~ Error - Rebase failed! ~~~~~~~~~'
+echo ''
+echo $git_rebase_out
+echo ''
+echo '~~~~~~~~~  Exiting ~~~~~~~~~'
+echo ''
+echo ''
+sleep 2
+git checkout $curr_branch
+echo ''
+echo ''
+exit 1
+fi
 sleep 2
 #clear
 echo ''
